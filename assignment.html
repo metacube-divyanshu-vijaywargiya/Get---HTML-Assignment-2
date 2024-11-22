@@ -25,37 +25,51 @@
     <section class="employee_region" id="employee">
         <details>
             <summary><h2>Employee Details</h2></summary>
-            <form action="#" style="margin-top: 20px;">
+            <form action="#" style="margin-top: 20px; width: 400px;">
                 <!-- Full Name Input -->
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full_name" name="full-name" required class="input-box" placeholder="Enter name"><br><br>
+                <div class="input_group">
+                     <label for="full-name">Full Name:</label>
+                     <input type="text" id="full_name" name="full-name" required class="input-box" placeholder="Enter name"><br><br>
+                </div>
                 
                 <!-- Gender Selection -->
-                <label for="Gender">Gender:</label>
-                <input type="radio" id="male-gender" name="Gender" value="Male">
-                <label for="male-gender">Male</label>
-                <input type="radio" id="female-gender" name="Gender" value="Female">
-                <label for="female-gender">Female</label>
+                <div class="input_group">
+                    <label>Gender:</label>
+                    <div style="display: flex; width: 80%;">
+                        <input type="radio" id="male-gender" name="Gender" value="Male">
+                        <label for="male-gender">Male</label>
+                        <input type="radio" id="female-gender" name="Gender" value="Female">
+                        <label for="female-gender">Female</label>
+                    </div>
+                </div>
                 <br><br>
                 
                 <!-- Email Input -->
-                <label for="email">Email Id:</label>
-                <input type="email" id="email" name="email" required class="input-box" placeholder="Enter email"><br><br>
+                <div class="input_group">
+                     <label for="email">Email Id:</label>
+                     <input type="email" id="email" name="email" required class="input-box" placeholder="Enter email"><br><br>
+                </div>
                 
                 <!-- Password Input -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" minlength="8" class="input-box" required placeholder="Enter password"><br><br>
-                
+                <div class="input_group">
+                     <label for="password">Password:</label>
+                     <input type="password" id="password" name="password" minlength="8" class="input-box" required placeholder="Enter password"><br><br>
+                </div>
+                     
                 <!-- Confirm Password Input -->
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" class="input-box" minlength="8" required placeholder="Enter password again"><br><br>
+                <div class="input_group">
+                     <label for="confirm-password">Confirm Password:</label>
+                     <input type="password" id="confirm-password" name="confirm-password" class="input-box" minlength="8" required placeholder="Enter password again"><br><br>
+                </div>
                 
                 <!-- Contact Number Input -->
-                <label for="contact-number">Contact Number:</label>
-                <input type="tel" id="contact-number" name="contact-number" class="input-box" title="Please enter a valid 10-digit phone number." placeholder="Enter phone number" required><br><br>
+                <div class="input_group">
+                     <label for="contact-number">Contact Number:</label>
+                     <input type="tel" id="contact-number" name="contact-number" class="input-box" title="Please enter a valid 10-digit phone number." placeholder="Enter phone number" required><br><br>
+                </div>
                 
                 <!-- Submit Button -->
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="btn-form">
             </form>
         </details>
     </section>
@@ -66,32 +80,43 @@
     <section class="vehicle_region" id="vehicle">
         <details>
             <summary><h2>Vehicle Details</h2></summary>
-            <form action="#" style="margin-top: 20px;">
-                <label for="company-name">Vehicle Make(Company):</label>
-                <input type="text" id="company_name" class="input-box" name="company-name" placeholder="Enter vehicle make" required><br><br>
+            <form action="#" style="margin-top: 20px; width: 400px;">
+                <div class="input_group">
+                    <label for="company-name">Vehicle Make(Company):</label>
+                    <input type="text" id="company_name" class="input-box" name="company-name" placeholder="Enter vehicle make" required><br><br>
+                </div>
                 
-                <label for="vehicle-model">Vehicle Model:</label>
-                <input type="text" id="vehicle_model" class="input-box" name="vehicle-model" placeholder="Enter vehicle model" required><br><br>
+                <div class="input_group">
+                    <label for="vehicle-model">Vehicle Model:</label>
+                    <input type="text" id="vehicle_model" class="input-box" name="vehicle-model" placeholder="Enter vehicle model" required><br><br>
+                </div>
                 
-                <label for="vehicle-type">Type:</label>
-                <select id="vehicle_type" name="vehicle-type" required>
-                    <option value="" disabled selected>Select Vehicle type</option>
-                    <option value="car">Car</option>
-                    <option value="bike">Bike</option>
-                </select><br><br>
+                <div class="input_group">   
+                    <label for="vehicle-type">Type:</label>
+                    <select id="vehicle_type" name="vehicle-type" required>
+                        <option value="" disabled selected class="placeholder-option">Select Vehicle type</option>
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                    </select><br><br>
+                </div>
                 
+                <div class="input_group">
+                    <label for="vehicle_number">Vehicle Number :</label>
+                    <input type="text" id="vehicle-number" class="input-box" placeholder="Enter vehicle number" name="vehicle_number" required><br><br>
+                </div>
                 
-                <label for="vehicle_number">Vehicle Number :</label>
-                <input type="text" id="vehicle-number" class="input-box" placeholder="Enter vehicle number" name="vehicle_number" required><br><br>
+                <div class="input_group">
+                    <label for="employee-id">Employee Id:</label>
+                    <input type="text" id="employee_id" name="employee-id" placeholder="Enter employee id" class="input-box" required><br><br>
+                </div>
                 
-                <label for="employee-id">Employee Id:</label>
-                <input type="text" id="employee_id" name="employee-id" placeholder="Enter employee id" class="input-box" required><br><br>
+                <div class="input_group">
+                    <label for="identification">Identification:</label>
+                    <textarea name="identification" class="input-box" id="identification" placeholder="Enter Identification"></textarea>
+                    <br><br>
+                </div>
                 
-                <label for="identification">Identification:</label>
-                <textarea name="identification" class="input-box" id="identification" placeholder="Enter Identification"></textarea>
-                <br><br>
-                
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="btn-form">
             </form>
         </details>
     </section>
@@ -101,21 +126,29 @@
     <section class="feedback_region" id="feedback">
         <details>
             <summary><h2>Feedback Details</h2></summary>
-            <form action="#">
-                <p><b>Get in touch</b></p>
+            <form action="#" style="margin-top: 20px; width: 400px;">
+                <p class="feedback_heading">Get in touch</p>
     
-                <label for="feedback-name">Name:</label>
-                <input type="text" id="feedback_name" name="feedback-name" class="input-box" placeholder="Enter Name" required><br><br>
+                <div class="input_group">
+                    <label for="feedback-name">Name:</label>
+                    <input type="text" id="feedback_name" name="feedback-name" class="input-box" placeholder="Enter Name" required><br><br>
+                </div>
     
-                <label for="feedback-email">Email Id:</label>
-                <input type="email" id="feedback_email" name="feedback-email" class="input-box" placeholder="Enter email id" required><br><br>
+                <div class="input_group">
+                    <label for="feedback-email">Email Id:</label>
+                    <input type="email" id="feedback_email" name="feedback-email" class="input-box" placeholder="Enter email id" required><br><br>
+                </div>
     
-                <label for="feedback-subject">Subject :</label>
-                <input type="text" id="feedback_subject" name="feedback-subject" placeholder="Enter Subject" class="input-box" required><br><br>
-    
-                <label for="feedback-message">Message:</label>
-                <textarea name="feedback-message" class="input-box" id="feedback_message" placeholder="Enter Message"></textarea>
-                <br><br>
+                <div class="input_group">
+                    <label for="feedback-subject">Subject :</label>
+                    <input type="text" id="feedback_subject" name="feedback-subject" placeholder="Enter Subject" class="input-box" required><br><br>
+                </div>
+
+                <div class="input_group">
+                    <label for="feedback-message">Message:</label>
+                    <textarea name="feedback-message" class="input-box" id="feedback_message" placeholder="Enter Message"></textarea>
+                    <br><br>
+                </div>
     
                 <button type="submit" value="Submit" class="btn-form">Send Email</button>
             </form>
@@ -125,10 +158,12 @@
     <br><br><hr>
 
     <section class="pricing_region" id="pricing">
-        <h2>Pricing Section</h2>
+        <h2 style="color: rgb(252, 99, 43);">Pricing Section</h2>
         <div class="pricing_cards">
-            <div class="pricing_card">
-                <p><strong>CYCLE</strong></p>
+            <div class="pricing_card page">
+                <p>
+                    <strong style="color: rgb(252, 99, 43);">CYCLE</strong>
+                </p>
                 <div class="monthly_price">
                     <p class="card_pricing_main">$100</p>
                     <p>/Month</p>
@@ -138,8 +173,8 @@
                 <p>$500 Yearly</p>
                 <button>PURCHASE NOW</button>
             </div>
-            <div class="pricing_card">
-                <p><strong>MOTORCYCLE</strong></p>
+            <div class="pricing_card page">
+                <p><strong style="color: rgb(252, 99, 43);">MOTORCYCLE</strong></p>
                 <div class="monthly_price">
                     <p class="card_pricing_main">$200</p>
                     <p>/Month</p>
@@ -149,8 +184,8 @@
                 <p>$1000 Yearly</p>
                 <button>PURCHASE NOW</button>
             </div>
-            <div class="pricing_card">
-                <p><strong>FOUR WHEELERS</strong></p>
+            <div class="pricing_card page">
+                <p><strong style="color: rgb(252, 99, 43);">FOUR WHEELERS</strong></p>
                 <div class="monthly_price">
                     <p class="card_pricing_main">$500</p>
                     <p>/Month</p>

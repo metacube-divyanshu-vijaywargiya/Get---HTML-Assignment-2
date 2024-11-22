@@ -1,11 +1,19 @@
 .input-box{
-    border: 2px solid rgb(0, 0, 86) ;
+    border: 2px solid rgb(252, 99, 43);
+    background-color: #f0f8ff00;
+    padding: 5px;
 }
 
+body{
+    background-color: #333;
+}
+
+.placeholder-option {
+    color: rgba(128, 128, 128, 1); /* Change this to your desired color */
+}
 
 .nav-bar{
-    /* width: 100vw; */
-    background-color: rgb(0, 0, 86);
+    background-color: rgb(252, 99, 43);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -22,20 +30,20 @@
         }
 
         li a:hover{
-            color: cadetblue;
+            color: rgb(0, 0, 0);
         }
     }
 }
 /* Accordian */
 details {
-    border: 2px solid rgb(0, 0, 86);
+    border: 2px solid rgb(252, 99, 43);
     border-radius: 10px;
     margin-top: 10px;
     padding: 10px;
 }
 
 summary {
-    background-color: rgb(0, 0, 86);
+    background-color: rgb(252, 99, 43);
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -43,14 +51,14 @@ summary {
 }
 
 summary:hover {
-    background-color: rgb(0, 0, 120);
+    background-color: rgb(160, 66, 31);
 }
 
 /*  */
 /* General styles for the pricing section */
 .pricing_region {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: transparent;
     text-align: center;
 }
 
@@ -80,13 +88,13 @@ summary:hover {
 
 .pricing_card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1em 0.5em rgba(255, 98, 31, 0.237);
 }
 
 .pricing_card p {
     margin: 10px 0;
     font-size: 1.2em;
-    color: #555;
+    color: rgb(252, 99, 43) ;
 }
 
 .pricing_card strong {
@@ -96,8 +104,9 @@ summary:hover {
 
 /* Button styles */
 .btn-form{
-    color: #007BFF;
-    border: 1px solid #007BFF;
+    color: white;
+    border: none;
+    background-color: rgb(252, 99, 43);
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1em;
@@ -107,12 +116,12 @@ summary:hover {
 
 .btn-form button:hover {
     color: white;
-    background-color: #007BFF;
+    background-color: rgb(216, 91, 45);
 }
 
 .pricing_card button {
-    color: #007BFF;
-    border: 1px solid #007BFF;
+    color: rgb(252, 99, 43);
+    border: 1px solid rgb(252, 99, 43);
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1em;
@@ -122,19 +131,25 @@ summary:hover {
 
 .pricing_card button:hover {
     color: white;
-    background-color: #007BFF;
+    background-color: rgb(252, 99, 43);
 }
 
 .monthly_price{
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: auto;
+    
+    p{
+        color: rgb(252, 99, 43) ;
+
+    }
 }
 
 .card_pricing_main{
     font-size: xx-large !important;
+    color: rgb(252, 99, 43) ;
     font-weight: 800;
 }
 
@@ -144,4 +159,49 @@ details > summary {
   
   details > summary::marker{
     display: none;
+  }
+
+
+  .input_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 10px; /* Adds space between input groups */
+}
+
+.input_group label {
+    width: 40%; /* Set a fixed width for labels */
+    text-align: left; /* Align text to the left */
+    color: white;
+}
+
+.input_group input {
+    width: 55%; /* Set a fixed width for inputs */
+}
+
+textarea{
+    width: 220px;
+}
+
+/* Style for the select element */
+#vehicle_type {
+    width: 235px; 
+    border: 2px solid rgb(252, 99, 43);
+    background-color: transparent; 
+    padding: 6px;
+    color: #847b7b;
+}
+
+.page {
+    border-radius: 0.5em;
+    color: rgb(252, 99, 43);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.126);
+    backdrop-filter: blur(1em);
+  }
+
+  .feedback_heading{
+    font-weight: 600;
+    font-size: x-large;
+    color: rgb(252, 99, 43);
   }
